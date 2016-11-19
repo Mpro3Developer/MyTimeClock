@@ -1,0 +1,44 @@
+.ui-content section {
+	overflow: hidden;
+	overflow-y: auto;
+	text-align: center;
+}
+
+#pageIndicatorCirclePage section h3 {
+	margin-top: 140px;
+}
+
+.ui-bottom-button .ui-btn::before {
+	background-color: rgba(0, 149, 255, 1);
+}
+
+#show {
+	display: none;
+}
+
+.ui-btnred {
+	background-color: #c10000;
+}
+
+.ui-btnred:active {
+	background-color: #e56060 !important;
+}
+
+.ui-btnred:before {
+	background-color: #c10000 !important;
+}
+
+.in 
+{
+	background-color: rgba(0, 149, 255, 1);
+}
+
+.out 
+{
+	background-color: #c10000;
+}
+
+.total
+{
+	background-color: #06CD51;
+}

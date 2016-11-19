@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<title>My Time Clock</title>
+	
+	<!-- libs styles -->
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- page styles -->
+	<link rel="stylesheet"  href="css/sectionchanger.css">
+</head>
+
+<body>
+	<div id="pageIndicatorCirclePage" class="ui-page" data-enable-page-scroll="false">
+		<!-- paginator -->
+		<div id="pageIndicator" class="ui-page-indicator" data-layout="circular"></div>
+
+		<div id="hsectionchanger" class="ui-content">
+			<!-- section changer has only one child. -->
+			
+			<div>
+				<!-- about stage -->
+				<section>
+					<h3>www.mpro3.com.br</h3>
+					<img alt="" src="mprologo.png">
+				</section>
+				
+				<!-- check in check out stage -->
+				<section class="ui-section-active">
+					<header class="ui-header">
+						<h2 class="ui-title">My Time Clock</h2>
+					</header>
+					<button class="ui-btn" id="timeClockIn" style="display:block">Clock In</button>
+					<br>
+					<button class="ui-btn ui-btnred" id="timeClockOut" style="display:block">Clock Out</button>
+				</section>
+				
+				<!-- list entries -->
+				<section>
+					<header class="ui-header">
+						<h2 class="ui-title" id="dtToday"></h2>
+					</header>
+					<div id="listToday">
+						<!-- content here -->
+					</div>
+				</section>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- libs -->
+	<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+	<script src="lib/jquery.js"></script>
+	<script src="lib/mproentity/MproEntityBeta.min.js"></script>
+	
+	<!-- models -->
+	<script src="js/model/TimeClock.js"></script>
+	
+	<!-- app rules -->
+	<script src="js/app.js"></script>
+	
+</body>
+
+</html>
