@@ -77,7 +77,7 @@ else
 		sectionChanger = new tau.widget.SectionChanger(changer, {
 			circular: true,
 			orientation: "horizontal",
-			useBouncingEffect: true
+			useBouncingEffect: true,
 		});
 	});
 
@@ -151,21 +151,29 @@ else
 	 */
 	document.addEventListener("rotarydetent", function(event)
 	{
-		var besselLeft = (event.detail.direction === "CW");
+		var besselRight = (event.detail.direction === "CW");
+		var besselLeft = (event.detail.direction === "CCW");
+		var activeSection = sectionChanger.getActiveSectionIndex();
 		
-		if (besselLeft) 
+		if (besselRight) 
 		{ 
 			// to next stage
-			sectionChanger.setActiveSection(sectionChanger.getActiveSectionIndex() + 1, 100);
+			if (activeSection < sections.length - 1)
+            {
+				sectionChanger.setActiveSection(activeSection + 1, 30);
+            }
 		} 
-		else 
+		else if(besselLeft)
 		{
 			// to previous stage
-			sectionChanger.setActiveSection(sectionChanger.getActiveSectionIndex() - 1, 100);
+			if (activeSection > 0)
+            {
+				sectionChanger.setActiveSection(activeSection - 1, 30);
+            }
 		}
 
 		// if the stage is the list of entries
-		if(sectionChanger.getActiveSectionIndex() == 2)
+		if(sectionChanger.getActiveSectionIndex() == 1)
 		{
 			// get the actual date and clear list
 			var dt = new Date();
