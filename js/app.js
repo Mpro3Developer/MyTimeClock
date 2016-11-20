@@ -169,9 +169,9 @@ else
 		{
 			// to previous stage
 			if (activeSection > 0)
-            {
+			{
 				sectionChanger.setActiveSection(activeSection - 1, 30);
-            }
+			}
 			else // end
 				navigator.vibrate(100);
 		}
