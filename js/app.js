@@ -162,6 +162,8 @@ else
             {
 				sectionChanger.setActiveSection(activeSection + 1, 30);
             }
+			else // end
+				navigator.vibrate(100);
 		} 
 		else if(besselLeft)
 		{
@@ -170,6 +172,8 @@ else
             {
 				sectionChanger.setActiveSection(activeSection - 1, 30);
             }
+			else // end
+				navigator.vibrate(100);
 		}
 
 		// if the stage is the list of entries
