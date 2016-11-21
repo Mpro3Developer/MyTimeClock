@@ -9,6 +9,11 @@
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="icon.png"/>
     <name>My Time Clock</name>
+    <tizen:privilege name="http://tizen.org/privilege/nfc.admin"/>
+    <tizen:privilege name="http://tizen.org/privilege/nfc.cardemulation"/>
+    <tizen:privilege name="http://tizen.org/privilege/nfc.common"/>
+    <tizen:privilege name="http://tizen.org/privilege/nfc.p2p"/>
+    <tizen:privilege name="http://tizen.org/privilege/nfc.tag"/>
     <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
     <tizen:privilege name="http://tizen.org/privilege/power"/>
     <tizen:privilege name="http://tizen.org/privilege/notification"/>
