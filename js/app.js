@@ -57,6 +57,12 @@ else
 }
 
 /**
+ * Get NFC Device
+ */
+var nfcDevice = new NFCDevice();
+nfcDevice.enableCardEmulation();
+
+/**
  * TAU page controll events
  */
 (function() {
@@ -85,6 +91,7 @@ else
 		// release object
 		sectionChanger.destroy();
 		pageIndicator.destroy();
+		nfcDevice.disableCardEmulation();
 	});
 
 	pageIndicatorHandler = function (e) {

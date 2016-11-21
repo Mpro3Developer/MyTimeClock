@@ -4,7 +4,7 @@
         <tizen:src name="index.html"/>
         <tizen:operation name="http://tizen.org/appcontrol/operation/view"/>
     </tizen:app-control>
-    <tizen:application id="JeVm8ef038.MyTimeClock" package="JeVm8ef038" required_version="2.3"/>
+    <tizen:application id="JeVm8ef038.MyTimeClock" package="JeVm8ef038" required_version="2.3.1"/>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="icon.png"/>
